@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD6D44991CF43D92007C197A /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6D44981CF43D92007C197A /* Fraction.m */; };
 		CDB51BC81CF3EDAC00BA977E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB51BC71CF3EDAC00BA977E /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD6D44971CF43D92007C197A /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		CD6D44981CF43D92007C197A /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		CDB51BC41CF3EDAC00BA977E /* Objc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Objc; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB51BC71CF3EDAC00BA977E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				CDB51BC71CF3EDAC00BA977E /* main.m */,
+				CD6D44971CF43D92007C197A /* Fraction.h */,
+				CD6D44981CF43D92007C197A /* Fraction.m */,
 			);
 			path = Objc;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB51BC81CF3EDAC00BA977E /* main.m in Sources */,
+				CD6D44991CF43D92007C197A /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +215,7 @@
 		CDB51BCC1CF3EDAC00BA977E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +223,7 @@
 		CDB51BCD1CF3EDAC00BA977E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +247,7 @@
 				CDB51BCD1CF3EDAC00BA977E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
