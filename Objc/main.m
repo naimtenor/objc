@@ -13,18 +13,16 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Calculator *deskCalc = [[Calculator alloc] init];
+        int n, triangularNumber;
         
-        [deskCalc setAccumulator:100.0];
-        [deskCalc add:200.];
-        [deskCalc divide:15.0];
-        [deskCalc substract:10.0];
-        [deskCalc multiply:5];
-        NSLog(@"The result is %g", [deskCalc accumulator]);
+        triangularNumber = 0;
         
+        for (n = 1; n <= 200; n = n + 1) {
+            triangularNumber += n;
+        }
         
-        
-        [deskCalc release];
+        NSLog(@"The 200th triangular number is %i", triangularNumber);
+
     }
     return 0;
 }
