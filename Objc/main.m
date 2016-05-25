@@ -15,19 +15,12 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Fraction *aFraction = [[Fraction alloc] init];
-        Fraction *bFraction = [[Fraction alloc] init];
         
-        [aFraction setNumerator:1];
-        [aFraction setDenominator:4];
-        
+        [aFraction setTo:100 over:200];
         [aFraction print];
         
-        NSLog(@" =");
-        NSLog(@"%g", [aFraction convertToNum]);
-        
-        [bFraction print];
-        NSLog(@" =");
-        NSLog(@"%g", [bFraction convertToNum]);
+        [aFraction setTo:1 over:3];
+        [aFraction print];
     }
     return 0;
 }
