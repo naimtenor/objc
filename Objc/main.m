@@ -14,20 +14,18 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *aFraction = [[Fraction alloc] init];
-        Fraction *bFraction = [[Fraction alloc] init];
+        int number_to_test, remainder;
         
-        [aFraction setNumerator:1];
-        [aFraction setDenominator:4];
+        NSLog(@"Enter your number to be tested: ");
+        scanf("%i", &number_to_test);
         
-        [aFraction print];
+        remainder = number_to_test % 2;
         
-        NSLog(@" =");
-        NSLog(@"%g", [aFraction convertToNum]);
-        
-        [bFraction print];
-        NSLog(@" =");
-        NSLog(@"%g", [bFraction convertToNum]);
+        if (remainder == 0) {
+            NSLog(@"The number is even.");
+        } else {
+            NSLog(@"The number is odd.");
+        }
     }
     return 0;
 }
