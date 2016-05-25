@@ -14,20 +14,20 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *aFraction = [[Fraction alloc] init];
-        Fraction *bFraction = [[Fraction alloc] init];
+        int number, sign;
         
-        [aFraction setNumerator:1];
-        [aFraction setDenominator:4];
+        NSLog(@"Please type in a number: ");
+        scanf("%i", &number);
         
-        [aFraction print];
+        if (number < 0) {
+            sign = -1;
+        } else if (number == 0) {
+            sign = 0;
+        } else {
+            sign = 1;
+        }
         
-        NSLog(@" =");
-        NSLog(@"%g", [aFraction convertToNum]);
-        
-        [bFraction print];
-        NSLog(@" =");
-        NSLog(@"%g", [bFraction convertToNum]);
+        NSLog(@"Sign = %i", sign);
     }
     return 0;
 }
