@@ -13,18 +13,16 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Calculator *deskCalc = [[Calculator alloc] init];
+        int number, right_digit;
         
-        [deskCalc setAccumulator:100.0];
-        [deskCalc add:200.];
-        [deskCalc divide:15.0];
-        [deskCalc substract:10.0];
-        [deskCalc multiply:5];
-        NSLog(@"The result is %g", [deskCalc accumulator]);
+        NSLog(@"Enter your number.");
+        scanf("%i", &number);
         
-        
-        
-        [deskCalc release];
+        do {
+            right_digit = number % 10;
+            NSLog(@"%i", right_digit);
+            number /= 10;
+        } while (number != 0);
     }
     return 0;
 }
