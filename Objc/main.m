@@ -22,6 +22,8 @@ int main(int argc, const char * argv[]) {
         [deskCalc multiply:5];
         NSLog(@"The result is %g", [deskCalc accumulator]);
         
+        
+        
         [deskCalc release];
     }
     return 0;
