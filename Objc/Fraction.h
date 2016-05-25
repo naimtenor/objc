@@ -24,4 +24,6 @@
 -(int) numerator;
 -(int) denominator;
 
+-(double) convertToNum;
+
 @end
