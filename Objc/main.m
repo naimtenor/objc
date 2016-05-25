@@ -14,20 +14,18 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *aFraction = [[Fraction alloc] init];
-        Fraction *bFraction = [[Fraction alloc] init];
+        char c;
         
-        [aFraction setNumerator:1];
-        [aFraction setDenominator:4];
+        NSLog(@"Enter a single character: ");
+        scanf(" %c", &c);
         
-        [aFraction print];
-        
-        NSLog(@" =");
-        NSLog(@"%g", [aFraction convertToNum]);
-        
-        [bFraction print];
-        NSLog(@" =");
-        NSLog(@"%g", [bFraction convertToNum]);
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+            NSLog(@"It's an alphabetic character.");
+        } else if (c >= '0' && c <= '9') {
+            NSLog(@"It's a digit.");
+        } else {
+            NSLog(@"It's a special character.");
+        }
     }
     return 0;
 }
