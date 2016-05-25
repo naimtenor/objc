@@ -14,20 +14,25 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *aFraction = [[Fraction alloc] init];
-        Fraction *bFraction = [[Fraction alloc] init];
+        double value1, value2;
+        char operator;
+        Calculator *deskCalc = [[Calculator alloc] init];
         
-        [aFraction setNumerator:1];
-        [aFraction setDenominator:4];
+        NSLog(@"Type in your exepression.");
+        scanf("%lf %c %lf", &value1, &operator, &value2);
         
-        [aFraction print];
+        [deskCalc setAccumulator:value1];
         
-        NSLog(@" =");
-        NSLog(@"%g", [aFraction convertToNum]);
+        if (operator == '+')
+            [deskCalc add:value2];
+        else if (operator == '-')
+            [deskCalc substract:value2];
+        else if (operator == '*')
+            [deskCalc multiply:value2];
+        else if (operator == '/')
+            [deskCalc divide:value2];
         
-        [bFraction print];
-        NSLog(@" =");
-        NSLog(@"%g", [bFraction convertToNum]);
+        NSLog(@"%.2f", [deskCalc accumulator]);
     }
     return 0;
 }
