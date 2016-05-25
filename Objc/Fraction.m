@@ -9,38 +9,41 @@
 #import "Fraction.h"
 
 @implementation Fraction
+
+@synthesize numerator, denominator;
+
 -(void) print
 {
     NSLog(@"%i/%i", numerator, denominator);
 }
 
--(void) setNumerator:(int)n
-{
-    numerator = n;
-}
-
--(void) setDenominator:(int)d
-{
-    denominator = d;
-}
-
--(BOOL) setNumerator:(int)n withDenominator:(int)d
-{
-    numerator = n;
-    denominator = d;
-    
-    return YES;
-}
-
--(int) numerator
-{
-    return numerator;
-}
-
--(int) denominator
-{
-    return denominator;
-}
+//-(void) setNumerator:(int)n
+//{
+//    numerator = n;
+//}
+//
+//-(void) setDenominator:(int)d
+//{
+//    denominator = d;
+//}
+//
+//-(BOOL) setNumerator:(int)n withDenominator:(int)d
+//{
+//    numerator = n;
+//    denominator = d;
+//    
+//    return YES;
+//}
+//
+//-(int) numerator
+//{
+//    return numerator;
+//}
+//
+//-(int) denominator
+//{
+//    return denominator;
+//}
 
 -(double)convertToNum
 {

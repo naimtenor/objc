@@ -14,20 +14,12 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *aFraction = [[Fraction alloc] init];
-        Fraction *bFraction = [[Fraction alloc] init];
+        Fraction *myFraction = [[Fraction alloc] init];
         
-        [aFraction setNumerator:1];
-        [aFraction setDenominator:4];
+        myFraction.numerator = 1;
+        myFraction.denominator = 3;
         
-        [aFraction print];
-        
-        NSLog(@" =");
-        NSLog(@"%g", [aFraction convertToNum]);
-        
-        [bFraction print];
-        NSLog(@" =");
-        NSLog(@"%g", [bFraction convertToNum]);
+        NSLog(@"The numerator is %i, and the denominator is %i", myFraction.numerator, myFraction.denominator);
     }
     return 0;
 }
