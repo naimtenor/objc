@@ -7,32 +7,48 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Calculator.h"
-#import "Fraction.h"
+//#import "Rectangle.h"
+//#import "Square.h"
+//#import "XYPoint.h"
+#import "ClassA.h"
 
 //---- 프로그램 부분 ----
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *aFraction = [[Fraction alloc] init];
-        Fraction *bFraction = [[Fraction alloc] init];
-         
-        Fraction *resultFraction;
+        //8.2
+//        Rectangle *myRect = [[Rectangle alloc] init];
+//        
+//        [myRect setWidth:5 andHeight:8];
+//        
+//        NSLog(@"Rectangle: w = %i, h = %i", myRect.width, myRect.height);
+//        NSLog(@"Area = %i, Perimeter = %i", [myRect area], [myRect perimeter]);
         
-        [aFraction setTo:1 over:4];
-        [bFraction setTo:1 over:2];
+        // 8.3
+//        Square *mySquare = [[Square alloc] init];
+//        
+//        [mySquare setSide:5];
+//        
+//        NSLog(@"Square s = %i", [mySquare side]);
+//        NSLog(@"Area = %i, Perimeter = %i" ,[mySquare area], [mySquare perimeter]);
         
-        [aFraction print];
-        NSLog(@"+");
-        [bFraction print];
-        NSLog(@"=");
+        // 8.4
+//        Rectangle * myRect = [[Rectangle alloc] init];
+//        XYPoint *myPoint = [[XYPoint alloc] init];
+//        
+//        [myPoint setX:100 andY:200];
+//        
+//        [myRect setWidth:5 andHeight:8];
+//        
+//        myRect.origin = myPoint;
+//        
+//        NSLog(@"Rectangle w = %i, h = %i", myRect.width, myRect.height);
+//        NSLog(@"Origin at (%i, %i)", myRect.origin.x, myRect.origin.y);
+//        NSLog(@"Area = %i Perimeter = %i", [myRect area], [myRect perimeter]);
         
-        resultFraction = [aFraction add:bFraction];
-        
-        [aFraction release];
-        [bFraction release];
-        
-        [resultFraction print];
+        // temp
+        ClassA *classA = [[ClassA alloc] init];
+        [classA testMethodA];
     }
     return 0;
 }
