@@ -7,32 +7,53 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Calculator.h"
-#import "Fraction.h"
+#import "Fraction+DevOps.h"
 
 //---- 프로그램 부분 ----
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *aFraction = [[Fraction alloc] init];
-        Fraction *bFraction = [[Fraction alloc] init];
-         
-        Fraction *resultFraction;
+        Fraction *a = [[Fraction alloc] init];
+        Fraction *b = [[Fraction alloc] init];
         
-        [aFraction setTo:1 over:4];
-        [bFraction setTo:1 over:2];
+        Fraction *result;
         
-        [aFraction print];
-        NSLog(@"+");
-        [bFraction print];
-        NSLog(@"=");
+        [a setTo:1 over:3];
+        [b setTo:2 over:5];
         
-        resultFraction = [aFraction add:bFraction];
+        [a print];
+        NSLog(@"    +");
+        [b print];
+        NSLog(@"-----");
+        result = [a add:b];
+        [result print];
+        NSLog(@"\n");
         
-        [aFraction release];
-        [bFraction release];
+        [a print];
+        NSLog(@"    -");
+        [b print];
+        NSLog(@"-----");
+        result = [a sub:b];
+        [result print];
+        NSLog(@"\n");
         
-        [resultFraction print];
+        [a print];
+        NSLog(@"    *");
+        [b print];
+        NSLog(@"-----");
+        result = [a mul:b];
+        [result print];
+        NSLog(@"\n");
+        
+        [a print];
+        NSLog(@"    /");
+        [b print];
+        NSLog(@"-----");
+        result = [a div:b];
+        [result print];
+        NSLog(@"\n");
+        
+        
     }
     return 0;
 }
