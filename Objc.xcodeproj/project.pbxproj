@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD03AE8B1CF6B9B200BDBECF /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03AE8A1CF6B9B200BDBECF /* Complex.m */; };
 		CD6D44991CF43D92007C197A /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6D44981CF43D92007C197A /* Fraction.m */; };
 		CD6D449C1CF43EB9007C197A /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6D449B1CF43EB9007C197A /* Calculator.m */; };
 		CDB51BC81CF3EDAC00BA977E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB51BC71CF3EDAC00BA977E /* main.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD03AE891CF6B9B200BDBECF /* Complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
+		CD03AE8A1CF6B9B200BDBECF /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
 		CD6D44971CF43D92007C197A /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		CD6D44981CF43D92007C197A /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		CD6D449A1CF43EB9007C197A /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				CD6D44981CF43D92007C197A /* Fraction.m */,
 				CD6D449A1CF43EB9007C197A /* Calculator.h */,
 				CD6D449B1CF43EB9007C197A /* Calculator.m */,
+				CD03AE891CF6B9B200BDBECF /* Complex.h */,
+				CD03AE8A1CF6B9B200BDBECF /* Complex.m */,
 			);
 			path = Objc;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD03AE8B1CF6B9B200BDBECF /* Complex.m in Sources */,
 				CD6D449C1CF43EB9007C197A /* Calculator.m in Sources */,
 				CDB51BC81CF3EDAC00BA977E /* main.m in Sources */,
 				CD6D44991CF43D92007C197A /* Fraction.m in Sources */,
